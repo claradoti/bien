@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
-  @@foo = "bar" # class var
   def index
     # this is our list page for our reviews
     @number = rand(100) # instance var
@@ -61,6 +60,6 @@ class ReviewsController < ApplicationController
   end
 
   def form_params
-    params.require(:review).permit(:title, :body, :score)
+    params.require(:review).permit(:title, :restaurant, :body, :score, :ambiance)
   end
 end
