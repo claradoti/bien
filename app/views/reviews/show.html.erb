@@ -21,7 +21,10 @@
 
 <% if @review.price.present? %>
   <div class="price">
-    Price: <%= @review.price %>
+    Price: <%= @review.price_in_dollar_signs %>
+  </div>
+  <div class="price">
+    Price: <%= price_in_dollar_signs(@review) %>
   </div>
 <% end %>
 

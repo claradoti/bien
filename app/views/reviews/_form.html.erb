@@ -21,6 +21,11 @@
   </p>
 
   <p>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
     <%= f.label :body %>
     <%= f.text_area :body %>
   </p>
@@ -31,13 +36,18 @@
   </p>
 
   <p>
-    <%= f.label :price %>
-    <%= f.number_field :price %>
+    <%= f.label :score %>
+    <%= f.number_field :score %>
   </p>
 
   <p>
-    <%= f.label :score %>
-    <%= f.number_field :score %>
+    <%= f.label :price, "Price" %>
+    <%= f.radio_button :price, 1 %>
+    <%= f.label :price, "$" %>
+    <%= f.radio_button :price, 2 %>
+    <%= f.label :price, "$$" %>
+    <%= f.radio_button :price, 3 %>
+    <%= f.label :price, "$$$" %>
   </p>
 
   <p>
