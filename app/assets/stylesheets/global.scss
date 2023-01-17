@@ -79,3 +79,23 @@ input[type=submit] {
 textarea {
   min-height: 400px;
 }
+
+nav.filters {
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  border-bottom: 2px solid $cream;
+
+  display: flex;
+  align-items: center;
+
+  a {
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    color: $black;
+  }
+
+  div {
+    margin: 0 20px 0 0;
+  }
+}
