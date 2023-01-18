@@ -63,10 +63,15 @@ label {
   display: block;
 }
 
+input {
+  margin-bottom: 20px;
+}
+
 input, textarea {
   font-size: 18px;
   min-width: 400px;
   border: 1px solid $black;
+  border-radius: 8px;
   padding: 7px 10px;
 }
 
@@ -74,10 +79,11 @@ input[type=submit] {
   background: $orange;
   color: white;
   border-color: $orange;
+  border-radius: 24px;
 }
 
 textarea {
-  min-height: 400px;
+  min-height: 200px;
 }
 
 nav.filters {
