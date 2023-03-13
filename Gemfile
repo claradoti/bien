@@ -86,4 +86,4 @@ group :test do
   gem "webdrivers"
 end
 
-ruby "ruby 3.0.0"
+ruby "3.0.0"
