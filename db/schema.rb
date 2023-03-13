@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_15_194900) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_19_150852) do
+  create_table "comments", force: :cascade do |t|
+    t.text "body"
+    t.integer "review_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["review_id"], name: "index_comments_on_review_id"
+  end
+
   create_table "reviews", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -27,4 +35,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_15_194900) do
     t.float "latitude"
   end
 
+  add_foreign_key "comments", "reviews"
 end
