@@ -113,7 +113,6 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.18.0)
     msgpack (1.6.1)
     net-imap (0.3.4)
@@ -126,14 +125,12 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.2)
-      mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.6)
+    profanity_filter (0.1.1)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -193,8 +190,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.1)
-      mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.1-arm64-darwin)
     sqlite3 (1.6.1-x86_64-linux)
     stimulus-rails (1.2.1)
@@ -228,7 +223,6 @@ GEM
 PLATFORMS
   arm64-darwin-20
   arm64-darwin-22
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -240,6 +234,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   pg
+  profanity_filter
   puma (~> 5.0)
   rails (~> 7.0.4)
   sassc-rails
